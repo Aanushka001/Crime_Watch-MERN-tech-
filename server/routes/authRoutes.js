@@ -1,9 +1,8 @@
-import express from 'express';
-import { logout, verifyToken, getUserProfile } from '../controllers/authController.js';
+import { Router } from 'express';
 import passport from 'passport';
-import { adminAuth } from '../config/firebase-admin.js';
+import { logout, verifyToken, getUserProfile } from '../controllers/authController.js';
 
-const router = express.Router();
+const router = Router();
 
 router.get('/logout', logout);
 
@@ -24,7 +23,7 @@ router.post('/login', passport.authenticate('firebase-email', { session: false }
 router.post('/register', async (req, res) => {
   const { email, password } = req.body;
   try {
-    const userRecord = await adminAuth.createUser({
+    const userRecord = await admin.auth().createUser({
       email,
       password,
     });
