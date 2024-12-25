@@ -16,7 +16,7 @@ const Login = () => {
     
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/');
+      navigate('/profile');
     } catch (error) {
       console.error('Login error:', error);
       setError('Failed to log in. Please check your credentials.');
