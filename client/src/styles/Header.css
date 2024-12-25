@@ -1,0 +1,89 @@
+/* Header Style */
+.header {
+    background-color: #1e1e1e; /* Dark background for a serious tone */
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-title {
+    margin: 0;
+    font-size: 2rem;
+    color: #f9a825; /* Bright color to stand out */
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1rem;
+  }
+  
+  .nav-link:hover {
+    color: #f9a825; /* Highlight link on hover */
+  }
+  
+  .profile-menu {
+    position: relative;
+  }
+  
+  .profile-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 100;
+    min-width: 200px;
+  }
+  
+  .profile-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile-item {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    cursor: pointer;
+    color: #ddd;
+  }
+  
+  .profile-item:hover {
+    background-color: #444; /* Highlight item on hover */
+  }
+  
+  .profile-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  

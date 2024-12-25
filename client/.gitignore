@@ -1,0 +1,6 @@
+.vercel
+node_modules/
+*.pack
+.cache/
+build/
+.env
